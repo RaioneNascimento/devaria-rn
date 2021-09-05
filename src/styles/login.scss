@@ -51,9 +51,46 @@
       &:focus {
         border-color: $primaryColor;
       }
+
       &::placeholder {
         color: $mediumGrayColor;
         opacity: 1;
+      }
+      
+      &:-ms-input-placeholder {
+        color: $mediumGrayColor;
+      }
+
+      &::-ms-input-placeholder {
+        color: $mediumGrayColor;
+      }
+    }
+  }
+  @media screen and (min-width: 992px) {
+    display: flex;
+    flex-direction: row;
+
+    .logo {
+      width: 520px;
+      margin: 0px;
+    }
+
+    form {
+      border-style: solid;
+      color: $primaryColor;
+      border-width: 0.1em;
+      border-radius: 32px;
+      padding: 80px 40px;
+      margin-left: 10%;
+
+      .input {
+        input {
+          width: 343px;
+        }
+
+        img {
+          width: 20px;
+        }
       }
     }
   }
